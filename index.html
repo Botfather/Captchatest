@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"> </head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center">Human Test!</h3>
+                        <div class="row" id="captchaKit">
+                            <div class="col-md-4 col-md-push-5"> <img alt="Bootstrap Image Preview" src="" id="captchawindow"> </div>
+                            <div class="col-md-12" style="margin-top:5px;">
+                                <form class="form-horizontal" id="textform" action="index.html">
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label" style="margin-left:8.5%;"> Enter the text you see in the image. </label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control" id="inputcaptcha" /> </div>
+                                        <div class="col-sm-2">
+                                            <button type="submit" class="btn btn-default" onClick="auth();"> Check </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-dismissable alert-danger fade in " id="red">
+            <button type="button" class="close" aria-hidden="true"> &times; </button> <span style="font-size:16px;"> &#9760; <strong> Oops!</strong> Robot??? :(</span> </div>
+        <div class="alert alert-success alert-dismissable fade in" id="green">
+            <button type="button" class="close" aria-hidden="true"> &times; </button> <span style="font-size:16px;"> &#9786; <strong> Hey!</strong> It worked!</span> </div>
+    </div>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
